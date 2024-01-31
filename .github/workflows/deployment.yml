@@ -18,6 +18,6 @@ jobs:
           switches: -avzr --delete
           path: /Users/jakkapong/Devs/Tutorial/github-workflows-rsync-deployment/site/
           remote_path: /var/www/html/
-          remote_host: 159.223.52.19
+          remote_host: 178.128.120.239
           remote_user: root
           remote_key: ${{ secrets.DEPLOY_KEY }}
