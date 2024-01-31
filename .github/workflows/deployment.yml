@@ -16,7 +16,7 @@ jobs:
         uses: burnett01/rsync-deployments@6.0.0
         with:
           switches: -avzr --delete
-          path: /Users/jakkapong/Devs/Tutorial/github-workflows-rsync-deployment/site/
+          path: /Users/jakkapong/Devs/Tutorial/github-workflows-rsync-deployment/site/index.html
           remote_path: /var/www/html/
           remote_host: 178.128.120.239
           remote_user: root
