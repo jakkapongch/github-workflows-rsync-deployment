@@ -15,7 +15,7 @@ jobs:
       - name: rsync deployments
         uses: burnett01/rsync-deployments@6.0.0
         with:
-          switches: -avzr --delete
+          switches: '--chmod=D755,F644 -p'
           path: /Users/jakkapong/Devs/Tutorial/github-workflows-rsync-deployment/site/index.html
           remote_path: /var/www/html/
           remote_host: 178.128.120.239
